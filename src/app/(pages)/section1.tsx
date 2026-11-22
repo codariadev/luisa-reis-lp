@@ -19,7 +19,7 @@ export default function Section1() {
 
           <Button href="#oferta">QUERO APRENDER A CONVERTER MELHOR →</Button>
 
-          <div className="mt-3 text-[13px] lg:text-[11px] text-[#b08d57]">
+          <div className="mt-3 text-[13px] text-[#b08d57] text-center">
             Acesso digital • Leitura prática • Ações para a mesma semana
           </div>
         </div>
