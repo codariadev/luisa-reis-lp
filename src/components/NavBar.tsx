@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="relative mx-auto flex w-full max-w-280 items-center justify-between px-6 py-4">
 
         <a href="#top" aria-label="Voltar ao topo" onClick={() => setMenuOpen(false)} className="flex">
-          <Image className="max-md:h-10 max-md:w-auto" src="/logo-navbar.png" width={200} height={200} alt="logo"/>
+          <Image className="max-md:h-10 max-md:w-auto" src="/logo-navbar.png" width={200} height={200} alt="Luisa Reis — Estratégia em vendas"/>
         </a>
 
         <nav className="hidden items-center gap-7 md:flex">
