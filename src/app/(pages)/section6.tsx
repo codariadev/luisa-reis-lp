@@ -3,8 +3,8 @@ export default function Section6() {
 
   return (
     <section className="bg-[#f0ece1] scroll-mt-20" id="oferta">
-      <div className="section-container section-container-centered gap-10 w-1/3">
-        <div className="flex items-center flex-col gap-10">
+      <div className="section-container section-container-centered gap-6 lg:gap-10 w-full lg:w-1/3">
+        <div className="flex items-center flex-col gap-5 lg:gap-10">
           <div className="eyebrow">Comece pelo que já tem</div>
           <h2 className="section-title max-w-full text-[clamp(30px,4vw,48px)] font-semibold">
             Quanto vale aproveitar melhor os leads que você já pagou para ter?

@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Section7() {
   return (
     <section className="bg-[#f0ece1] scroll-mt-24" id="sobre">
-      <div className="section-container flex gap-13.75">
-        <div>
+      <div className="section-container flex flex-col gap-8 lg:flex-row lg:gap-13.75">
+        <div className="max-lg:w-full">
           <Image
             className="portrait"
             src="/profile.jpg"
@@ -13,12 +13,12 @@ export default function Section7() {
             alt="Foto de Luisa Reis"
           />
         </div>
-        <div className="flex gap-4 flex-col">
+        <div className="flex gap-4 flex-col max-lg:w-full">
           <div className="eyebrow">Quem criou este material</div>
           <h2 className="section-title max-w-full text-[clamp(30px,4vw,48px)] font-semibold">
             Olá, eu sou a Luisa Reis.
           </h2>
-          <p className="section-subtitle text-justify">
+          <p className="section-subtitle text-left lg:text-justify">
             Com mais de 15 anos de experiência no campo de batalha das vendas,
             sou Luisa Reis, líder comercial experiente em conversão de leads e
             estruturação de processos. Minha missão é ajudar donos de negócios e

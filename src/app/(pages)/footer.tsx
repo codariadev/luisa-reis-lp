@@ -1,11 +1,8 @@
-const msgWhatsApp = encodeURIComponent(
-  "Oi, vindo site e quero transformar leads em clientes."
-);
 
 const contatos = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/luisadosreisdasilva", icon: "in" },
   { label: "Instagram", href: "https://instagram.com/lrluisareis", icon: "ig" },
-  { label: "WhatsApp", href: `https://wa.me/5548920038357?text=${msgWhatsApp}`, icon: "wa" },
+  { label: "WhatsApp", href: "https://wa.me/5548920038357", icon: "wa" },
   { label: "E-mail", href: "mailto:contato@luisareis.com.br", icon: "mail" },
 ];
 
@@ -34,7 +31,7 @@ function Icon({ name }: { name: string }) {
   return (
     <footer className="bg-[#14284B]/95 text-[#F7F3EA]">
       <div className="mx-auto max-w-6xl px-6 py-14 grid gap-10 md:grid-cols-2 md:items-center">
-        <div>
+        <div className="max-md:text-center">
           <p className="font-cg text-4xl">Luisa Reis</p>
           <p className="mt-1 text-xs uppercase tracking-[0.25em] text-[#B08D57]">Estratégia em vendas</p>
         </div>
@@ -50,7 +47,7 @@ function Icon({ name }: { name: string }) {
                   href={c.href}
                   target={c.icon === "mail" ? undefined : "_blank"}
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 text-sm text-[#F7F3EA]/70 transition hover:text-[#F7F3EA]"
+                  className="group inline-flex items-center gap-2 max-md:min-h-11 text-sm text-[#F7F3EA]/70 transition hover:text-[#F7F3EA]"
                 >
                   <span className="text-[#B08D57]"><Icon name={c.icon} /></span>
                   <span className="border-b border-transparent pb-0.5 transition group-hover:border-[#B08D57]">
@@ -64,7 +61,7 @@ function Icon({ name }: { name: string }) {
       </div>
 
       <div className="border-t border-[#F7F3EA]/10">
-        <div className="mx-auto max-w-6xl px-6 py-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-xs text-[#F7F3EA]/60">
+        <div className="mx-auto max-w-6xl px-6 py-5 flex flex-col items-center text-center md:text-left gap-4 md:flex-row md:items-center md:justify-between text-xs text-[#F7F3EA]/60">
           <span>© 2026 Luisa Reis • Todos os direitos reservados.</span>
 
           <a

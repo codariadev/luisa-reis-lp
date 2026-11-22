@@ -1,8 +1,8 @@
 
 export default function Section3() {
   return (
-    <section className="section-gradient scroll-mt-24 flex justify-center py-50" id="metodo">
-      <div className="section-container py-30">
+    <section className="section-gradient scroll-mt-24 flex justify-center py-12 lg:py-50" id="metodo">
+      <div className="section-container py-6 lg:py-30">
         <div className="flex flex-col gap-5">
           <div className="eyebrow">O método</div>
           <h2

@@ -8,7 +8,7 @@ export default function Section9() {
   return (
     <section className="bg-[#14284b]">
       <div className="section-container section-container-centered">
-        <div className="eyebrow antialiased drop-shadow-[0_1px_2px_rgba(255,255,255,0.45)]">
+        <div className="eyebrow antialiased">
           Sua próxima venda pode estar no que você já tem.
         </div>
         <h2 className="section-title text-[clamp(30px,4vw,48px)] font-semibold text-white leading-[1.08] tracking-[-1.5px] my-2.5 mx-auto mb-4.5 max-w-195">

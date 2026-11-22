@@ -3,8 +3,8 @@ export default function Section4() {
   return (
     <section className="bg-[#14284b] scroll-mt-24" id="conteudo">
       <div className="section-container section-container-centered gap-5">
-        <div className="flex items-center flex-col gap-10">
-          <div className="eyebrow antialiased drop-shadow-[0_1px_2px_rgba(255,255,255,0.45)]">Dentro do e-book</div>
+        <div className="flex items-center flex-col gap-5 lg:gap-10">
+          <div className="eyebrow antialiased">Dentro do e-book</div>
           <h2 className="section-title max-w-full text-[clamp(30px,4vw,48px)] font-semibold text-white">
             Um guia prático para<br></br>transformar contatos<br></br>em clientes pagantes.
           </h2>

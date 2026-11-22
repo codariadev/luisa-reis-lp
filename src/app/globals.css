@@ -31,6 +31,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
 @layer components {
   .logo-start{
     font-family: var(--font-cg);
@@ -292,4 +298,44 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/* ===== Responsivo (mobile/tablet): só abaixo de 1024px; desktop intacto ===== */
+@layer components {
+  @media (max-width: 1023px) {
+    .section-container {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 2rem;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+    .section-title { letter-spacing: -1.2px; }
+    .section-subtitle { font-size: 16px; }
+    .chapters { grid-template-columns: minmax(0, 1fr); margin-top: 28px; }
+    .chapter { padding: 16px; }
+    .container-cards {
+      grid-template-columns: minmax(0, 1fr);
+      padding-inline: 1.25rem;
+      margin-top: 28px;
+      padding-bottom: 3rem;
+    }
+    .section-cards { padding: 20px; }
+    .pricebox { width: 100%; padding: 28px 20px; }
+    .price { font-size: 44px; }
+    .btn {
+      text-align: center;
+      min-height: 48px;
+      max-width: 100%;
+      padding: 14px 20px;
+    }
+    .micro { font-size: 13px; }
+    .portrait {
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      margin-inline: auto;
+    }
+    .faq details { padding: 4px 0; }
+    .faq summary { min-height: 44px; padding-block: 8px; text-align: left; }
+  }
 }
