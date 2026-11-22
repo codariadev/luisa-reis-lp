@@ -32,6 +32,8 @@ export default function Section1() {
               width={986}
               height={1474}
               alt="Capa do e-book Do Lead ao Cliente: Como Converter"
+              priority
+              sizes="(max-width: 1023px) 70vw, 350px"
             />
           </div>
         </div>
