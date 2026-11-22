@@ -1,5 +1,6 @@
 export default function Section6() {
   const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL ?? "#oferta";
+  const isExternal = /^https?:\/\//i.test(checkoutUrl);
 
   return (
     <section className="bg-[#f0ece1] scroll-mt-20" id="oferta">
@@ -16,7 +17,13 @@ export default function Section6() {
           <div className="price-note">
             pagamento único • acesso imediato • produto digital
           </div>
-          <a className="btn" href={checkoutUrl}>QUERO MEU E-BOOK AGORA</a>
+          <a
+            className="btn"
+            href={checkoutUrl}
+            {...(isExternal
+              ? { target: "_blank" as const, rel: "noopener noreferrer" }
+              : {})}
+          >QUERO MEU E-BOOK AGORA</a>
           <div className="micro">
             Você será direcionado para a Amazon.
           </div>
